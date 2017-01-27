@@ -1,3 +1,7 @@
+.mobile {
+  display: none;
+}
+
 header {
   background: black no-repeat center center;
   background-size: cover;
@@ -5,10 +9,6 @@ header {
   position: relative;
   width: 100%;
   height: 100vh;
-
-  .mobile {
-    display: none;
-  }
 
   .branding {
     h1 {
