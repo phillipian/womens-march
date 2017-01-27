@@ -1,12 +1,13 @@
 article {
   width: 100%;
   box-sizing: border-box;
-  padding: 0 10%;
-  margin-bottom: 75px;
-  border-top: 2px solid black;
+  padding: 0 22%;
+  margin-bottom: 45px;
+  // border-top: 2px solid black;
 
   &:first-child {
     margin: 25px 0 70px 0;
+    padding-top: 10px;
     border-top: none;
   }
 
@@ -24,8 +25,8 @@ article {
 
   p {
     margin-bottom: 20px;
-    line-height: 22px;
-    font-size: 18px;
+    line-height: 26px;
+    font-size: 17px;
     color: #444444;
 
     &:first-child {
@@ -41,14 +42,14 @@ article {
     margin-top: 0;
   }
 
-  p:first-child::first-letter {
-    float: left;
-    font-size: 80px;
-    line-height: 40px;
-    padding-top: 14px;
-    padding-right: 4px;
-    padding-bottom: 4px;
-  }
+  // p:first-of-type::first-letter {
+  //   float: left;
+  //   font-size: 80px;
+  //   line-height: 40px;
+  //   padding-top: 14px;
+  //   padding-right: 4px;
+  //   padding-bottom: 4px;
+  // }
 
   .quote {
     text-align: center;
@@ -56,10 +57,10 @@ article {
 
     blockquote {
       color: black; // #021F42; //#1053C8;
-      font-size: 50px;
-      line-height: 60px;
+      font-size: 30px;
+      line-height: 40px;
       font-weight: 700;
-      width: 60%;
+      width: 70%;
       margin: 0 auto;
       margin-bottom: 30px;
     }
@@ -76,6 +77,10 @@ article {
 }
 
 @media only screen and (max-width : 640px) {
+  article {
+      padding: 0 10%;
+  }
+
   .quote {
     blockquote {
       width: 100% !important;

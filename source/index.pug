@@ -1,17 +1,17 @@
 extends ./includes/main.pug
 
 block vars
-  - var path=''
+  - var path='Andover Joins the March'
 
 block header
-  - var header1 = ''
-  - var sub1 = ''
-  - var sub2 = ''
-  - var image = ''
+  - var header1 = 'Andover Joins the March'
+  - var caption = 'A day after the innauguration of the 45th President of the United States, Donald J. Trump, millions of women marched around the world in support of equal rights for all.'
+  - var sub1 = 'By Alexandra LeBaron <br>Photo: Courtesy of Aya Murata.'
+  - var image = 'march/a.murata.header.jpg'
   include includes/header.pug
 
 block social
-  - var title = 'Title'
+  - var title = 'The Phillipian — Andover Joins the Women\'s March'
   - var description = ''
 
   meta(charset='UTF-8')
@@ -35,7 +35,22 @@ block social
   meta(itemprop='image', content='')
 
 block content
+  include articles/story.pug
+  include articles/narratives.pug
 
 block scripts
-
+  script(src='https://code.jquery.com/jquery-3.1.1.min.js', integrity='sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=', crossorigin='anonymous')
   script(type='text/javascript', src='http://vjs.zencdn.net/5.12.6/video.js')
+
+  script(type='text/javascript').
+    console.log('test');
+    $(window).on('scroll', function() {
+      var scroll = $(window).scrollTop();
+      console.log(scroll);
+      if (scroll >= $('header').height()) {
+        $('nav').addClass('visible');
+      }
+      else {
+        $('nav').removeClass('visible');
+      }
+    });

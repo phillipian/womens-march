@@ -4,9 +4,10 @@ nav {
   box-sizing: border-box;
   top: 0;
   position: fixed;
+  display: none;
   z-index: 999;
-  background-color: black;// #021F42; //#F2F2F2;
-  font-family: 'Lato', sans-serif;
+  background-color: white;// #021F42; //#F2F2F2;
+  font-family: 'Georgia', 'Times New Roman', serif;
 
   img {
     display: none;
@@ -28,10 +29,14 @@ nav {
 
   h3 {
     display: none;
-    color: white;
+    color: black;
     font-family: 'Lato', sans-serif;
     line-height: 60px;
     margin-left: 15px;
+  }
+
+  &.visible {
+    display: block;
   }
 
   &.shadow {
@@ -45,21 +50,20 @@ nav {
   }
 
   li {
-    width: 25%;
+    width: 22%;
     max-height: inherit;
     box-sizing: border-box;
-    color: white;
+    color: black;
     display: inline-block;
     text-align: center;
     padding: 20px 0;
-    text-transform: uppercase;
     font-weight: 900;
-    letter-spacing: 1.2px;
+    letter-spacing: .2px;
     overflow: auto;
 
     a {
       text-decoration: none;
-      color: white;
+      color: black;
     }
 
     &:first-child {

@@ -1,14 +1,15 @@
-// Created by Rudd Fawcett '18 and designed by Ally Klionsky '17 for The Phillipian. Contact him at rfawcett@andover.edu for more information.
+// Created by Rudd Fawcett '18 for The Phillipian. Contact him at rfawcett@andover.edu for more information.
 //
   Copyright (c) 2016 The Phillipian
   Cite The Phillipian if using any information from this website.
 
-  This project is open source at https://github.com/phillipian. -->
+  This project is open source at https://github.com/phillipian.
+
 doctype html5
 html(lang='en')
   block vars
   head
-    title Andover/Exeter: #{path}
+    title The Phillipian — #{path}
     block styles
     link(rel='stylesheet', href='assets/styles/main.css')
     link(rel='stylesheet', href='http://vjs.zencdn.net/5.12.6/video-js.css')
@@ -20,14 +21,14 @@ html(lang='en')
     .wrapper
       main
         block content
-    include footer.pug
+      include footer.pug
 
     block scripts
     script(type='text/javascript').
-      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
 
-      ga('create', 'UA-5329517-18', 'auto');
-      ga('send', 'pageview');
+        ga('create', 'UA-5329517-19', 'auto');
+        ga('send', 'pageview');

@@ -1,10 +1,16 @@
 @import "reset";
 @import "shared";
-@import "https://fonts.googleapis.com/css?family=Lato:300,400,700,900|Playfair+Display:700,900";
+@import "https://fonts.googleapis.com/css?family=Lato:300,400,700,900|Playfair+Display:400,700";
 
 body {
   background-color: white;
-  font-family: 'Times New Roman', 'Times', serif;
+  font-family: 'Georgia', 'Times New Roman', 'Times', serif;
+  font-weight: 300;
+}
+
+h1, h2, h3 {
+  font-family: 'Playfair Display', serif;
+  font-weight: 400;
 }
 
 .wrapper {
@@ -16,6 +22,8 @@ body {
 
 main {
   margin-bottom: 150px;
+  height: auto;
+  display: block;
 }
 
 @import "nav";
