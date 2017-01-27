@@ -6,7 +6,7 @@ nav {
   position: fixed;
   display: none;
   z-index: 999;
-  background-color: white;// #021F42; //#F2F2F2;
+  background-color: white;
   font-family: 'Georgia', 'Times New Roman', serif;
 
   img {
@@ -30,7 +30,7 @@ nav {
   h3 {
     display: none;
     color: black;
-    font-family: 'Lato', sans-serif;
+    font-family: 'Georgia', 'Times New Roman', serif;
     line-height: 60px;
     margin-left: 15px;
   }
@@ -101,10 +101,10 @@ nav {
   }
 
   nav ul, nav:active ul {
-    border-top: 1px dotted white;
+    // border-top: 1px dotted white;
     display: none;
     position: absolute;
-    background: rgba(black, 1);
+    background: transparent;
     top: 60px;
     width: 100%;
   }
@@ -121,6 +121,6 @@ nav {
   }
 
   nav:hover ul, nav a.menu:hover ul, nav a.menu:active ul {
-    display: block;
+    display: none;
   }
 }
